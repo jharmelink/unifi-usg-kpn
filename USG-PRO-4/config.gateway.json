@@ -75,11 +75,6 @@
                     }
                 },
                 "speed": "auto"
-            },
-            "eth1": {
-                "disable": "''",
-                "duplex": "auto",
-                "speed": "auto"
             }
         },
         "loopback": {
