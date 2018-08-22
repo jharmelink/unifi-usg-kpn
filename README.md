@@ -57,7 +57,7 @@ There are a lot of useful posts out there, this one is a composition of those ar
 * When connected to **USG**, you're connected to EdgeOS. Double pressing *tab* will give you an overview of commands.
 
 ## Prerequisites
-1. To support routed IPTV make sure you're using a (managed) switch supporting IGMP snooping
+1. To support routed IPTV make sure you're using a (managed) switch supporting **IGMP snooping**
 2. Have a Ubiquity UniFi Controller running. If not, see: https://miketabor.com/running-ubiquiti-unifi-controller-in-docker-on-synology-nas/
 3. Adopt, provision and upgrade your USG.
 4. Configure you're internal LAN setup (IP range(s) / DHCP / AP's / etc.).
@@ -78,7 +78,7 @@ There are a lot of useful posts out there, this one is a composition of those ar
 
 All done, you should now have Internet in your LAN.
 
-### 2. Create `config.gateway.json` file  
+### 2. Create `config.gateway.json` file
 The USG runs linux (EdgeOS version) as it's OS. The advanced settings need you to use the extension hooks Ubiquity build into the USG. See https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-How-to-further-customize-USG-configuration-with-config-gateway-json for more information.
 
 _At the time of writing the article is not 100% correct, the configuration in the custom configuration file is merged with the system configuration in the way that non-existent settings are added and existing items are overwritten by the settings in the file. Take good care not to mix and overwrite critical security settings with the config file. For this reason the config file provided in this repo is a minimum set of settings, all other settings are preserved (and hence future changes in upgrades as well)._
